@@ -36,6 +36,8 @@
 #include <android-base/logging.h>
 #include <android-base/strings.h>
 #include <android-base/properties.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
@@ -43,6 +45,7 @@
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
+using android::base::SetProperty;
 
 void property_override(char const prop[], char const value[])
 {
