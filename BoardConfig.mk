@@ -23,7 +23,7 @@ TARGET_OTA_ASSERT_DEVICE := j7elte
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_j7elte
+TARGET_INIT_VENDOR_LIB := //$(LOCAL_PATH):libinit_j7elte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_j7elte_defconfig
